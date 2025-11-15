@@ -1,0 +1,402 @@
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(223, 226, 228);
+}
+.continer{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin: 0 7%;
+}
+header{
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)) , url("images/home_bg.jpg");
+    width: 100%;
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+}
+header nav .links ul li{
+    display: inline;
+    list-style: none;
+}
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header nav .logo img{
+    width: 70px;
+}
+header .hero{
+    color: white;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    line-height: 40px;
+    height: 80vh;
+    text-transform: capitalize;
+}
+header nav .links ul li a{
+    text-decoration: none;
+    margin: 10px;
+    color: white;
+}
+header nav .links ul li a:hover{
+    text-decoration: underline;
+}
+
+header .hero span{
+    color: rgb(228, 192, 63);
+}
+header .hero h1{
+    font-size: 35px;
+}
+header .hero button{
+    background-color: transparent;
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+    border: white 1px solid;
+    margin-top: 20px;
+    transition-duration: 1s;
+    transition-timing-function: ease-in-out;
+}
+header .hero button:hover{
+    background-color: rgb(144, 119, 29); ;
+    cursor: pointer;
+    
+}
+@media (max-width:767px){
+    header nav{
+        display: block;
+        text-align: center;
+    }
+    header nav .logo img{
+        width: 100px;
+        text-align: center;
+    }
+    header .hero{
+        line-height: 30px;
+        text-align: center;
+    }
+    header .hero h1{
+        font-size: 20px;
+    }
+    header .hero p{
+        font-size: 12px;
+    }
+}
+
+#top{
+    margin-bottom: 30px;
+
+}
+#about .continer p{
+    color: rgb(134, 127, 127);
+}
+#about .continer .about{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap:30px;
+}
+#about .continer .about button{
+    background-color: rgba(19, 19, 57, 0.888);
+    color: white;
+    padding: 13px;
+    border-radius:10px;
+    border: none;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    transition: 1s ease;
+}
+#about .continer h2{
+    text-transform: capitalize;
+    font-size: 35px;
+}
+#about .continer {
+    margin-top: 50px;
+}
+#about .continer h2,#top{
+    text-align: center;
+}
+#about .continer .about button:hover{
+    background-color: rgba(6, 6, 37, 0.418);
+    cursor: pointer;
+}
+@media (max-width:767px ){
+    #about .continer h2{
+        font-size: 25px;
+    }
+    #about .continer p{
+        font-size: 10px;
+    }
+    #about .continer .about .pic img{
+        display: none;
+    }
+}
+#special{
+    background: url("images/offer-background.jpg");
+    text-align: center;
+    background-size: cover;
+    height: 100vh;
+}
+#special h2 {
+    color: rgb(228, 192, 63);
+    font-size: 30px;
+}
+#special #frist{
+    color: white;
+    line-height: 40px;
+    font-size: 14px;
+}
+#special .dishes{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 80vh;
+    gap:20px;
+}
+#special .dishes img{
+    width: 200px;
+}
+#special .dishes .meal h3{
+    color: white;
+    margin: 10px;
+}
+#special .dishes .meal p{
+    color: rgb(134, 127, 127);
+}
+#special .dishes .meal p del{
+    font-size: 13px;
+}
+#special .dishes .meal p span {
+    color:rgb(228, 192, 63) ;
+}
+@media (max-width:767px){
+    #special .dishes img{
+    width: 120px;
+    }
+    #special .dishes{
+        display: block;
+    }
+    #special h2{
+        font-size: 30px;
+    }
+    #special #frist{
+        font-size: 12px;
+        line-height:29px;
+    }
+    #special{
+        height: 130vh;
+        
+    }
+}
+#menu{
+    margin-top: 30px;
+
+}
+#menu .title{
+    margin-bottom: 20px;
+    text-align: center;
+    line-height: 50px;
+}
+#menu .title h2{
+    font-size: 35px;
+}
+#menu .title p{
+    font-size: 14px;
+}
+#menu .all img{
+    width: 100px;
+    border-radius: 100%;
+}
+#menu .all {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#menu .all .food{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    margin: 30px;
+}
+#menu .all .food .contant .head{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#menu .all .food .contant .line{
+    width: 400px;
+    height: 0;
+    border-bottom: 2px dashed black;
+    margin: 12px 0;
+}
+#menu .all .food .contant .head h4{
+    color: rgb(228, 192, 63);
+}
+#menu button{
+    color:white;
+    background-color: rgb(211, 178, 61);
+    padding: 15px;
+    border-radius: 10px;
+    border: none;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    transition-duration: .5s;
+    transition-timing-function: ease-in;
+}
+#menu button:hover{
+    background-color: rgb(173, 146, 50);
+    cursor: pointer;
+}
+#menu .btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@media (max-width:767px){
+    #menu .all {
+        display: block;
+        width: 300px;
+        margin: 0 0;
+    }
+    #menu .all .food{
+        width: 200px;
+    }
+    #menu .all img{
+        width: 70px;
+    }
+    #menu .all .food .contant .line{
+        width: 300px;
+    }
+    #menu .all p{
+        font-size: 12px;
+    }
+}
+#meals{
+    background: url("images/daytime_bg.jpeg");
+    margin-top: 30px;
+    margin-bottom: 0;
+    text-align: center;
+    color: white;
+    padding: 20px;
+}
+#meals .all2{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#meals h3{
+    font-size: 25px;
+}
+@media (max-width:767px){
+    #meals .all2{
+        display: block;
+    }
+    #meals .all2 .meal{
+        margin-bottom: 10px;
+        line-height: 40px;
+    }
+}
+#gallery {
+    text-align: center;
+    background: url("images/offer-background.jpg");
+}
+#gallery .pics img{
+    width: 300px;
+    height: 300px;
+    border-radius: 20px;
+    margin: 20px;
+    margin-bottom: 30px;
+    transition-duration: .4s;
+    transition-timing-function: ease-out;
+}
+#gallery .pics img:hover{
+    opacity: 0.5;
+    cursor: pointer;
+}
+#gallery .pics {
+    grid-template-columns: repeat(3,1fr);
+    
+}
+#gallery .frist h2{
+    margin-bottom: 20px;
+    position: relative;
+    top: 20px;
+    font-size: 35px;
+    color: white;
+}
+@media (max-width:767px){
+    #gallery .pics img{
+    width: 250px;
+    height: 200px;
+    }
+    #gallery .pics{
+        display: block;
+    }
+}
+#contact .together{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 30px;
+}
+#contact .together .left .address{
+    margin-bottom: 30px;
+    line-height: 40px;
+}
+#contact .together .left p{
+    color: rgb(140, 140, 140);
+}
+#contact .together .left h3{
+    color: rgb(25, 25, 65);
+    font-size: 25px;
+}
+#contact .together .left .work{
+     margin-bottom: 30px;
+    line-height: 40px;
+}
+#contact .together .left .follow{
+     margin-bottom: 30px;
+}
+#contact .together .right form input{
+    width: 400px;
+    padding: 10px;
+    margin: 10px;
+    border: none;
+}
+#contact .together .right form textarea{
+    width: 400px;
+    height: 100px;
+    position: relative;
+    left: 10px;
+}
+#contact .together .right form button{
+    color: white;
+    background-color: rgb(228, 192, 63);
+    border-radius: 10px;
+    padding: 10px;
+    border: none;
+    position: relative;
+    left: 10px;
+}
+footer{
+    background-color:rgb(25, 25, 65) ;
+    text-align: center;
+    color: white;
+    padding: 10px;
+}
+@media (max-width:767px){
+    #contact .together{
+        display: block;
+    }
+}
